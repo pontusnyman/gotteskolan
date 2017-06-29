@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <link rel="stylesheet" href="../node_modules/bulma/css/bulma.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    
+    <body>
+        <section class="hero">
+            <div class="hero-body">
+                <div class="container">
+                <h1 class="title">
+                    Förskolan.info
+                </h1>
+                <hr>
+                <h2 class="subtitle">
+                    Vi har information om 106 förskolor i Lund.
+                </h2>
+                </div>
+            </div>
+        </section>
+
+        <div class="tabs is-fullwidth is-boxed">
+            <ul>
+                <li class="is-active"><a>Alla</a></li>
+                <li><a>Kommunala</a></li>
+                <li><a>Privata</a></li>
+            </ul>
+        </div>
+
+        <div id="map"></div>
+
+
+        <div class="box">
+            <article class="media">
+                <div class="media-left">
+                </div>
+                <div class="media-content">
+                <div class="content has-text-centered">
+                   <div id="infowindow">Klicka på en punkt för att hitta mer information.</div>
+                </div>
+                </div>
+            </article>
+        </div>
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="content has-text-centered">
+                <p>
+                    <strong>Förskolan</strong>.info<a href="http://förskolan.info"></a>
+                </p>
+                <p>
+                    <a class="icon" href="www.google.se">
+                    <i class="shower"></i>
+                    </a>
+                </p>
+                </div>
+            </div>
+        </footer>
+        <script src="lund.js"></script>
+    </body>
+</html>
+
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZkVsrez5WCZdMjGYKrD-MMzkKHhDJZRI&callback=initMap"></script>
